@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+.film >.card > img{
+    filter: brightness(0.8);
+}
+.film >.card > img:hover{
+    filter: brightness(0.4);
+}
+.film >.card:hover >.movie-title{
+display: block;
+}
+.film >.card >.movie-title{
+    position: absolute;
+    left: 0;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+    top: calc(50% - 22px);
+    text-transform: capitalize;
+    display: none;
+}

@@ -1,0 +1,20 @@
+<div class="container mt-5">
+    <div class="row">
+            <form [formGroup]="searchForm" (ngSubmit)="search()">
+                <div class="form-group">
+                    <input type="search"class="form-control" placeholder="Searching for ..." formControlName="q">
+                </div>
+                <div class="form-group mt-3">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </div>
+
+            </form>
+
+
+    </div>
+    <div class="row mt-5">
+        <div *ngFor="let m of moviesList"class="film col-md-3 col-sm-6">
+            <app-movie-card [id]="m.id" [title]="m.title" [url]="m.large_cover_image"></app-movie-card>
+        </div>
+    </div>
+</div>

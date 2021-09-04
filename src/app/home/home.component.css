@@ -1,0 +1,3 @@
+.film-item >.card >.img{
+    filter: brightness(0.1);
+}
